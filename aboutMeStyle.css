@@ -14,7 +14,6 @@ body{
 #mainMenu{
   margin-top: 60vh;
   display: inline-block;
-
   padding-right: 20px;
 }
 
@@ -39,4 +38,14 @@ body{
 #blackSpace{
     flex:1;
     background: black;
+    color: white;
+    text-align: right;
+    font-family: “Arial Bold”, sans-serif;
+    font-weight: bold;
+}
+
+#blackSpace a{
+  color: white;
+  padding: 20px;
+  margin: 20px;
 }
