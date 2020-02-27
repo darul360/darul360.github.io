@@ -2,6 +2,7 @@
 html{
   height: 100%;
   scroll-behavior: smooth;
+  cursor: url("cursor.png");
 }
 body{
   background: white;
@@ -63,4 +64,9 @@ body{
   padding-top: 5vh;
   font-family: “Arial Bold”, sans-serif;
   font-weight: bold;
+  padding-left: 50px;
+}
+
+#subject1_1{
+  display:none;
 }
