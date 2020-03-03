@@ -111,3 +111,36 @@ body{
   width: 50%;
   height: 50%;
 }
+
+#social_media{
+  height: 100vh;
+  background-color: black;
+  padding-top: 5vh;
+  font-family: “Arial Bold”, sans-serif;
+  font-weight: bold;
+  padding-left: 50px;
+
+}
+
+#social_media p{
+  text-align: justify;
+  color:rgb(96, 96, 96);
+  font-size: 4vw;
+}
+
+#social_media a{
+  text-align: justify;
+  text-decoration: none;
+  color: white;
+  font-size: 3vw;
+  transition: all 1s ease;
+}
+
+#social_media a:hover{
+  letter-spacing: 0.5vw;
+}
+
+#fblogo{
+  width: 20vw;
+  height: 40vh;
+}
