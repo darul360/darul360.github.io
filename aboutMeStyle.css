@@ -65,8 +65,49 @@ body{
   font-family: “Arial Bold”, sans-serif;
   font-weight: bold;
   padding-left: 50px;
+  text-align: justify;
+}
+#subject0_1{
+  display:none;
+
 }
 
 #subject1_1{
   display:none;
+  font-family: 'Montserrat', ;
+
+}
+#subject2_1{
+  display:none;
+
+}
+
+#subject3_1{
+  display:none;
+
+}
+
+#subject4_1{
+  display: none;
+}
+
+#subject5_1{
+  display: none;
+  text-decoration: none;
+}
+
+#subject5_1 a{
+  text-decoration: none;
+  color: black;
+}
+
+
+#resp-container{
+  width: 1vw;
+  height: 2vh;
+}
+
+#resp-container iframe{
+  width: 50%;
+  height: 50%;
 }
