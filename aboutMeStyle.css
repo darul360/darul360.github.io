@@ -66,6 +66,7 @@ body{
   font-weight: bold;
   padding-left: 50px;
   text-align: justify;
+  max-height: 140vh;
 }
 #subject0_1{
   display:none;
