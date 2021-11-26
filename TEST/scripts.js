@@ -1,6 +1,6 @@
 function setupTypewriter(t) {
-
     var HTML = t.innerHTML;
+
     t.innerHTML = "";
 
     var cursorPosition = 0,
@@ -36,12 +36,12 @@ function setupTypewriter(t) {
                 tempTypeSpeed = 0;
             }
             else {
-                tempTypeSpeed = (Math.random() * typeSpeed) + 30;
+                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
             }
             t.innerHTML += HTML[cursorPosition];
         }
         if (writingTag === true && HTML[cursorPosition] === ">") {
-            tempTypeSpeed = (Math.random() * typeSpeed) + 30;
+            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
             writingTag = false;
             if (tagOpen) {
                 var newSpan = document.createElement("span");
@@ -61,12 +61,9 @@ function setupTypewriter(t) {
     return {
         type: type
     };
-
 }
 
 function loadContent(){
-
-  //var myStyle = document.getElementById("typewriter").offsetTop;
 
   var typer = document.getElementById('typewriter');
   typewriter = setupTypewriter(typewriter);
