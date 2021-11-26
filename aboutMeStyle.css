@@ -76,3 +76,26 @@ font-size: 2vw;
  text-decoration: none;
 
 }
+
+@media only screen and (max-width: 500px) {
+  #navbar a {
+    padding-top: 1%;
+    color:black;
+    text-align: center;
+    top:50%;
+  font-size: 5vw;
+   text-decoration: none;
+
+  }
+
+  #typewriter{
+      font-size: 4vw;
+      margin: 0;
+      font-family: "Courier New";
+
+      &:after{
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+      }
+  }
+}
