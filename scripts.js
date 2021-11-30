@@ -73,3 +73,28 @@ function loadContent(){
   typewriter.type();
 
 }
+
+function changeMenuColor_blue(){
+    var menu = document.getElementById('navbar');
+    menu.style.backgroundColor = "blue";
+}
+
+function changeMenuColor_orange(){
+    var menu = document.getElementById('navbar');
+    menu.style.backgroundColor = "orange";
+}
+function changeMenuColor_purple(){
+    var menu = document.getElementById('navbar');
+    menu.style.backgroundColor = "purple";
+}
+
+function changeMenuColor_red(){
+    var menu = document.getElementById('navbar');
+    menu.style.backgroundColor = "red";
+}
+
+
+function changeMenuColor_gray(){
+    var menu = document.getElementById('navbar');
+    menu.style.backgroundColor = "gray";
+}

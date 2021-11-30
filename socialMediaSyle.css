@@ -12,11 +12,11 @@ background-color: black;  min-height: 100%;
 #social_media{
   height: 100vh;
   background-color: black;
-  padding-top: 5vh;
+  padding-top: 10vh;
   font-family: “Arial Bold”, sans-serif;
   font-weight: bold;
   padding-left: 50px;
-
+  flex-direction: column;
 }
 
 #social_media p{
@@ -33,13 +33,29 @@ background-color: black;  min-height: 100%;
   transition: all 1s ease;
 }
 
+#social_media a:nth-child(24)
+{
+color: green;
+}
+
 #social_media a:hover{
   letter-spacing: 0.5vw;
 }
 
-#fblogo{
-  width: 20vw;
-  height: 40vh;
+#fb_ico{
+  width: 2vw;
+  height: 2vw;
+
+}
+
+#ig_ico{
+  width: 2vw;
+  height: 2vw;
+}
+
+#github_ico{
+  width: 2vw;
+  height: 2vw;
 }
 
 
@@ -49,9 +65,10 @@ background-color: black;  min-height: 100%;
   display: flex;                  /* establish flex container */
   flex-direction: row;            /* default value; can be omitted */
   flex-wrap: nowrap;              /* default value; can be omitted */
-  justify-content: space-between;  background-color: #0cb070;
+  justify-content: space-between;  background-color: red;
   font-family: “Arial Bold”, sans-serif;
   font-weight: bold;
+  transition: all 1s ease;
 
 }
 
@@ -62,9 +79,9 @@ background-color: black;  min-height: 100%;
   color:black;
   text-align: center;
   top:50%;
-font-size: 2vw;
- text-decoration: none;
- transition: all 1s ease;
+  font-size: 2vw;
+  text-decoration: none;
+  transition: all 1s ease;
 
 }
 
@@ -84,12 +101,23 @@ footer{
 }
 
 @media only screen and (max-width: 500px) {
+  #social_media a{
+    font-size: 5vw;
+  }
+
+  #social_media img{
+    width: 4vw;
+    height: 4vw;
+  }
+
   #navbar a {
     padding-top: 4%;
     color:black;
     text-align: center;
     top:50%;
-  font-size: 5vw;
+    white-space: nowrap;
+
+  font-size: 4.4vw;
    text-decoration: none;
 
   }
