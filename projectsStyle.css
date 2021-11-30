@@ -5,54 +5,8 @@ html{
   cursor: url("cursor.png");
 }
 body{
-background-color: black;  min-height: 100%;
+background-color: white;  min-height: 100%;
 }
-
-/* 50 % */
-#blackSpace{
-
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:white;
-    font-family: “Arial Bold”, sans-serif;
-    font-weight: bold;
-}
-
-.var-highlight{
-  color: #6860c1;
-}
-.string-highlight{
-  color: rgba(0, 255, 133, 0.8);
-}
-
-#typewriter{
-    font-size: 2vw;
-    margin: 0;
-    font-family: "Courier New";
-
-    &:after{
-      content: "|";
-      animation: blink 500ms linear infinite alternate;
-    }
-}
-
-@-webkit-keyframes blink{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
-}
-
-@-moz-keyframes blink{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
-}
-
-@keyframes blink{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
-}
-
 
 #navbar {
   height: 8vh;
@@ -60,14 +14,13 @@ background-color: black;  min-height: 100%;
   display: flex;                  /* establish flex container */
   flex-direction: row;            /* default value; can be omitted */
   flex-wrap: nowrap;              /* default value; can be omitted */
-  justify-content: space-between;  background-color: #0cb070;
+  justify-content: space-between;  background-color: rgb(196, 189, 89);
   font-family: “Arial Bold”, sans-serif;
   font-weight: bold;
 
 }
 
 #navbar a {
-  padding-top: 1%;
   padding-left:3%;
   padding-right: 3%;
   color:black;
@@ -85,13 +38,27 @@ font-size: 2vw;
 
 #navbar a:hover{
   letter-spacing: 10px;
+}
+
+#projects{
 
 }
 
-footer{
-  color: black;
-  font-family: "Courier New";
-  background-color: white;
+#click{
+  padding-left: 2vw
+}
+
+
+#menu{
+  display: flex;
+ flex-direction: column;
+ background-color: black;
+ color: white;
+ font-family: “Arial Bold”, sans-serif;
+ font-weight: bold;
+ width: 15vw;
+ height: 60vh;
+ padding-top: 3vw;
 }
 
 @media only screen and (max-width: 500px) {
@@ -115,7 +82,7 @@ footer{
   }
 
   #typewriter{
-      font-size: 3.6vw;
+      font-size: 3.8vw;
       margin: 0;
       margin-right: 4vw;
       padding-right: 8vw;
