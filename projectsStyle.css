@@ -5,30 +5,41 @@ html{
   cursor: url("cursor.png");
 }
 body{
-background-color: white;  min-height: 100%;
+background-color: black;  min-height: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+/*============ MENU ==============*/
+
+#menu_container{
+  flex-grow: 1;
+  width: 100%;
+  height: 4vw;
 }
 
 #navbar {
   height: 8vh;
   overflow: hidden;
-  display: flex;                  /* establish flex container */
-  flex-direction: row;            /* default value; can be omitted */
-  flex-wrap: nowrap;              /* default value; can be omitted */
-  justify-content: space-between;  background-color: rgb(196, 189, 89);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;  background-color: black;
   font-family: “Arial Bold”, sans-serif;
   font-weight: bold;
-
+  transition: all 1s ease;
 }
 
 #navbar a {
+  padding-top: 1%;
   padding-left:3%;
   padding-right: 3%;
-  color:black;
+  color:rgb(158, 13, 84);
   text-align: center;
   top:50%;
-font-size: 2vw;
- text-decoration: none;
- transition: all 1s ease;
+  font-size: 2vw;
+  text-decoration: none;
+  transition: all 1s ease;
 
 }
 
@@ -40,31 +51,53 @@ font-size: 2vw;
   letter-spacing: 10px;
 }
 
+/*============ PROJECTS VIEWER ==============*/
+
 #projects{
-
+      background-color: rgb(158, 13, 84);
+      height: 95%;
+      display: inline-block;
+      width: 100%;
 }
 
-#click{
-  padding-left: 2vw
+#viewer{
+/*  background-color: black; */
+  width: 100%;
+  height: 90%;
 }
-
 
 #menu{
   display: flex;
- flex-direction: column;
- background-color: black;
+ flex-direction: row;
  color: white;
  font-family: “Arial Bold”, sans-serif;
  font-weight: bold;
- width: 15vw;
- height: 60vh;
- padding-top: 3vw;
+ width: 100%;
+ height:10%;
+ flex-wrap: nowrap;
+ justify-content: space-between;
+ background-color: black;
 }
+
+#menu a{
+  padding-top: 1vw;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: white;
+}
+
+#menu a:hover{
+  color: yellow;
+    transition: all 1s ease;
+    text-decoration: overline;
+}
+
+
 
 @media only screen and (max-width: 500px) {
   #navbar a {
     padding-top: 4%;
-    color:black;
+    color:rgb(158, 13, 84);
     text-align: center;
     top:50%;
     white-space: nowrap;
@@ -80,17 +113,11 @@ font-size: 2vw;
   #navbar a:hover{
     letter-spacing: 0px;
   }
+  #menu{
+    display: flex;
+   flex-direction: row;
+   width: 100%;
+   height:6vw;
+ }
 
-  #typewriter{
-      font-size: 3.8vw;
-      margin: 0;
-      margin-right: 4vw;
-      padding-right: 8vw;
-      font-family: "Courier New";
-
-      &:after{
-        content: "|";
-        animation: blink 500ms linear infinite alternate;
-      }
-  }
 }
