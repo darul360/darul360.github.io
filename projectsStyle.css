@@ -93,6 +93,58 @@ flex-wrap: wrap;
 }
 
 
+#BonesGame{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vw;
+  padding-left: 7vw;
+}
+
+#BonesGame p{
+  display:inline-block;
+  font-family: “Arial Bold”, sans-serif;
+  color: white;
+  line-height: 2.8vw;
+  padding-left: 3vw;
+}
+
+#BonesGame a{
+  display:inline-block;
+}
+
+#SandmanGame{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vw;
+  padding-left: 17vw;
+}
+
+#SandmanGame p{
+  font-family: “Arial Bold”, sans-serif;
+  color: white;
+  line-height: 2.8vw;
+}
+
+#SpaceJellyGame{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vw;
+  padding-left: 7vw;
+}
+#SpaceJellyGame p{
+  display:inline-block;
+  font-family: “Arial Bold”, sans-serif;
+  color: white;
+  line-height: 3.8vw;
+  padding-left: 3vw;
+}
+
+#SpaceJellyGame a{
+  display:inline-block;
+}
 
 @media only screen and (max-width: 500px) {
   #navbar a {
