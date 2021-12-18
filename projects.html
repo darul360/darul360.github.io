@@ -14,7 +14,7 @@
   <script src="scripts.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="defaultFieldDecor()">
 
   <div id="menu_container">
     <div id="navbar">
@@ -27,14 +27,14 @@
   <div id="projects">
 
     <div id ="viewer">
-      
+
       <div id="BonesGame">
         <a id="resp-container">
             <iframe width="600" height="300" src="https://www.youtube.com/embed/c3Jo9P3D6w0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </a>
-                            <p>  > &nbsp;THIS IS A PROJECT OF GAME, MADE USING UNITY ENGINE
-                            <br> > &nbsp;GAME IS MADE IN 2.5D ENVIRONMENT.
-                            <br> > &nbsp;BONES IS A PLATFORM GAME, THATH USES THE
+                            <p>  > &nbsp;GAME MADE WITH UNITY ENGINE
+                            <br> > &nbsp;PROJECT IS MADE IN 2.5D ENVIRONMENT.
+                            <br> > &nbsp;BONES IS A PLATFORM GAME, THATH USES A
                             <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROCESS OF DECAPITATION OF SKELETEON.
                             <br> > &nbsp;PLAYER DON'T NEED TO USE WHOLE SKELETON,
                             <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOMETIMES YOU NEED TO USE ONLY HAND OR SKULL.
@@ -45,51 +45,87 @@
       </div>
 
 
-      <!--
+
       <div id="SandmanGame">
         <a id="resp-container">
                 <img src="COMPILATION.jpg" width="900" height="250"/>
         </a>
-                            <p>  > &nbsp;THIS IS A PROJECT OF MOBILE GAME, MADE USING UNITY ENGINE
+                            <p>  > &nbsp;PUBLISHED ON PLAY STORE MOBILE GAME, MADE WITH UNITY ENGINE
                             <br> > &nbsp;GAME IS MADE IN 2D ENVIRONMENT.
                             <br> > &nbsp;SANDMAN IS A PLATFORM GAME, IN WHICH PLAYER IS SUPPOSED TO BE A GOD CALLED SANDMAN.
-                            <br> > &nbsp;USERS TASK IS CREATE PATH FOR A GHOST, USING SAND.
+                            <br> > &nbsp;USERS TASK IS TO CREATE PATH FOR A GHOST, USING SAND.
                             <br> > &nbsp;TEAM MEMBERS: ME & JĘDRZEJ SKOCZYLAS.
                             <br>
                           </p>
       </div>
-      -->
-<!--
+
       <div id="SpaceJellyGame">
         <a id="resp-container">
                        <iframe src="https://player.vimeo.com/video/342835053" width="600" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </a>
-                            <p>  > &nbsp;THIS IS A PROJECT OF MOBILE GAME, MADE USING UNITY ENGINE
-                            <br> > &nbsp;GAME IS MADE IN 2D ENVIRONMENT.
-                            <br> > &nbsp;SANDMAN IS A PLATFORM GAME, IN WHICH PLAYER
-                            <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IS SUPPOSED TO BE A GOD CALLED SANDMAN.
-                            <br> > &nbsp;USERS TASK IS CREATE PATH FOR A GHOST, USING SAND.
-                            <br> > &nbsp;TEAM MEMBERS: ME & JĘDRZEJ SKOCZYLAS.
-                            <br>
+                            <p>  > &nbsp;THIS IS A PROJECT OF GAME, MADE USING MONOGAME FRAMEWORK.
+                            <br> > &nbsp;GAME IS A COMBINATION OF RTS AND AREA CONTROL.
+                            <br> > &nbsp;PROCESS OF CREATING GAME ENGINE AND GAMEPLAY, TOOK 4 MONTHS.
+                            <br> > &nbsp;TEAM MEMBERS: ME, JĘDRZEJ SKOCZYLAS, PATRYK LISIK, MARTYNA SKIBA.
                           </p>
-      </div>-->
+      </div>
+
+      <div id="DarulToolbar">
+        <a id="resp-container">
+                       <img src="DarulToolbar.png" width="600" height="300" />
+        </a>
+                            <p>  > &nbsp;DARUL TOOLSET IS MY LITTLE ASSISTANT IN WORK
+                            <br> > &nbsp;IT CONTAINS MY MOST USEFUL SHORTCUTS,
+                            <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME OFFICE MAILS GENERATOR,
+                            <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQL SERVERS CONNECTORS & DATABASE ARTICLES READER
+                            <br> > &nbsp;PROGRAM HAS IMPLEMENTED: PERMISSIONS MANAGER
+                            <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AND CONNECTION WITH DOMAIN
+                          </p>
+      </div>
+
+      <div id="ArCoreGame">
+        <a id="resp-container">
+                       <iframe src="https://player.vimeo.com/video/386436635" width="600" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </a>
+                            <p>  > &nbsp;MY THESIS PROJECT.
+                            <br> > &nbsp;APP IS A COMBINATIONS OF: ARCORE, TENSORFLOW,
+                            <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GOOGLE SPEECH TO TEXT API AND UNITY ENGINE.
+                            <br> > &nbsp;BASICALLY - ESCAPE ROOM GAME FOR ANDROID DEVICES,THAT USES
+                            <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPEECH RECOGNITION, LIGHT ESTIMATION & OBJECT DETECTION.
+                            <br> > &nbsp;PROJECT'S MAIN GOAL WAS TO CREATE EFFECT OF MR IN AR ENVIRONMENT.
+                          </p>
+      </div>
+
+      <div id="WebsitesHTML">
+        <a id="resp-container">
+                       <img src="strony.png" width="600" height="300" />
+        </a>
+                            <p>  > &nbsp;KINDERGARTEN WEBSITE CLEANED FROM ALL ISSUES
+                            <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AFTER JAPANEESE KEYWORD HACK.
+                            <br> > &nbsp;REDESIGNED THEME, PURE HTML, CSS & JS.
+                            <br> > &nbsp;I DESIGNED AND CREATED WEBISTE FOR PHYSIOTHERAPIST
+                            <br> > &nbsp;<a href="https://rybna7.pl" style="color: yellow">rybna7.pl </a>
+                            <br> > &nbsp;<a href="http://edumar.com.pl/" style="color: yellow">edumar.com.pl</a>
+                          </p>
+      </div>
+
 
     </div>
 
 
     <div id="menu">
         <br>
-        <a id="click" href="#"> BONES GAME  </a>
+        <a id="click1" onclick="showBones()" href="#"> BONES GAME  </a>
         <br>
-        <a id="click" href="#"> SANDMAN GAME  </a>
+        <a id="click2" onclick="showSandman()" href="#"> SANDMAN GAME  </a>
         <br>
-        <a id="click" href="#"> SPACE JELLY  </a>
+        <a id="click3" onclick="showSpaceJelly()" href="#"> SPACE JELLY  </a>
         <br>
-        <a id="click" href="#"> PAYMAN (JAVA) </a>
+        <a id="click4" onclick="showDarulToolset()" href="#"> DARUL TOOLSET </a>
         <br>
-        <a id="click" href="#"> AR CORE GAME </a>
+        <a id="click5" onclick="showArCoreGame()" href="#"> AR CORE GAME </a>
         <br>
-        <a id="click" href="#">KINDERGARTEN WEBSITE </a>
+        <a id="click6" onclick="showWebsitesHTML()"href="#"> WEBSITES </a>
         <br>
     </div>
 

@@ -146,6 +146,84 @@ flex-wrap: wrap;
   display:inline-block;
 }
 
+#DarulToolbar{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vw;
+  padding-left: 7vw;
+}
+#DarulToolbar p{
+  display:inline-block;
+  font-family: “Arial Bold”, sans-serif;
+  color: white;
+  line-height: 3.8vw;
+  padding-left: 3vw;
+}
+
+#DarulToolbar a{
+  display:inline-block;
+}
+
+#ArCoreGame{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vw;
+  padding-left: 7vw;
+}
+#ArCoreGame p{
+  display:inline-block;
+  font-family: “Arial Bold”, sans-serif;
+  color: white;
+  line-height: 3.8vw;
+  padding-left: 3vw;
+}
+
+#ArCoreGame a{
+  display:inline-block;
+}
+
+#WebsitesHTML{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vw;
+  padding-left: 7vw;
+  text-decoration: none;
+  color: white;
+}
+#WebsitesHTML p{
+  display:inline-block;
+  font-family: “Arial Bold”, sans-serif;
+  color: white;
+  line-height: 3.8vw;
+  padding-left: 3vw;
+  text-decoration: none;
+}
+
+#WebsitesHTML a{
+  display:inline-block;
+}
+
+
+/*=================== PROJEKTY========================*/
+#SandmanGame{
+  display: none;
+}
+
+#SpaceJellyGame{
+  display: none;
+}
+
+#DarulToolbar{
+  display: none;
+}
+
+#ArCoreGame{
+  display: none;
+}
+
+#WebsitesHTML{
+  display: none;
+}
 @media only screen and (max-width: 500px) {
   #navbar a {
     padding-top: 4%;
