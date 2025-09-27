@@ -1,0 +1,244 @@
+﻿.mainWindow {
+    width: 1100px;
+    max-width: 98%;
+    height: 720px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+    display: flex;
+    flex-direction: column;
+    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, system-ui, sans-serif;
+    transition: all 0.3s ease;
+}
+
+    .mainWindow.maximized {
+        width: 100% !important;
+        height: 100vh !important;
+        border-radius: 0 !important;
+        max-width: 100%;
+    }
+
+
+body {
+    background: linear-gradient(180deg, #f8fafc, #eef2f6);
+}
+
+.titleBar {
+    background: linear-gradient(180deg, rgb(255 255 255 / 0%), rgb(213 217 232 / 17%));
+}
+
+.vsLogo {
+    width: 30px;
+}
+
+.taskBar {
+    width: 60px;
+    background: rgb(239 235 255);
+}
+
+.bi-linkedin {
+    color: rgb(91 81 181);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.bi-linkedin:hover{
+    transform:scale(1.5);
+}
+
+.bi-github {
+    color: rgb(91 93 92);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.bi-github:hover {
+    transform: scale(1.5);
+}
+
+.controlPane {
+    background: rgb(249 245 252);
+}
+
+.headerPane {
+    font-size: 1rem;
+}
+
+.aboutMe {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    width: 90%;
+    margin-left: 17px;
+    cursor: pointer;
+}
+
+    .aboutMe::after {
+        content: "➔";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%) translateX(-10px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .aboutMe.active::after {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+    }
+
+    .aboutMe.active {
+        font-size: 1.24rem;
+        background: rgb(227 221 232);
+        border-radius: 15px;
+    }
+
+.cSharpImg {
+    width: 34px;
+    margin-right: 5px;
+}
+
+.extension {
+    font-size: 1rem;
+    padding-top: 4px;
+}
+
+.editor-container {
+    display: flex;
+    width: 100%;
+    font-family: Consolas, monospace;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-image: url('../resources/meascii.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-size: 30% auto;
+}
+
+.line-numbers {
+    background: rgba(240, 240, 240, 0.8);
+    color: #888;
+    text-align: right;
+    user-select: none;
+    overflow: hidden;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+    .line-numbers div {
+        height: 20px;
+    }
+
+.editor-textarea {
+    flex: 1;
+    border: none;
+    padding: 0 5px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 20px;
+    resize: none;
+    outline: none;
+    overflow: auto;
+    background: transparent;
+    color: #000;
+}
+
+.editor-textarea-tile-maximized {
+    flex: 1;
+    border: none;
+    padding: 0 5px;
+    font-family: Consolas, monospace;
+    font-size: 18x;
+    line-height: 20px;
+    resize: none;
+    outline: none;
+    overflow: auto;
+    background: transparent;
+    color: #000;
+}
+
+
+.logoPng {
+    width: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.tile-maximized {
+    font-size: 25px;
+    z-index: 10;
+    transition: transform 0.3s;
+}
+
+.logoPng-tile-maximized {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50px;
+}
+
+.card{
+    height:100%;
+}
+
+.container {
+    overflow-y: auto;
+    height: 94%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+    .container.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+.container-fluid {
+    opacity:0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+    .container-fluid.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+.contact-item {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 20px !important;
+}
+
+    .contact-item:hover {
+        transform: scale(1.05);
+        background-color: rgba(0, 123, 255, 0.05);
+    }
+
+.clickable-badge {
+    cursor: pointer; 
+    transition: transform 0.2s ease;
+}
+
+    .clickable-badge:hover {
+        transform: scale(1.2);
+    }
+
+
+.contactContainer-tile-maximized {
+    transform: scale(1.4);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contactContainer {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1);
+}
