@@ -1,7 +1,7 @@
 {
   "entryAssembly": "Project1",
   "resources": {
-    "hash": "sha256-S/Dpg3RSsRqWxMADYgrVvOKGzBWSPiSxgAoN10+3+GQ=",
+    "hash": "sha256-sGU3qdprBsjoLoVPeKxSLgrtAPQlH38sNOBMADW6eOs=",
     "runtime": {
       "dotnet.js": "sha256-eaJTmow4t8eE7FZMZR5Ja41JMOefGCbIYDTdpclGsac=",
       "dotnet.timezones.blat": "sha256-gbATD5HDsHYtW8vdPYh9iSBY4O5CjvMeCSF5xXWF1xo=",
@@ -54,7 +54,7 @@
       "System.Threading.dll": "sha256-lXTqz4P//kd/mQlYmYIjQW58o/9IOCa3Lkt2I2iPfHg=",
       "System.dll": "sha256-X00CS76RYP+1bonecVV1Cn/0jOHeoVQUo1GS8UHpHpM=",
       "System.Private.CoreLib.dll": "sha256-/E47Q0MZUInC54I5FvvpErGkArCfhnIZR0r9M0FqLPs=",
-      "Project1.dll": "sha256-CgSEsiRkpVPxpEalsYxZcybN9MQQC9B3S96JYYLELcI="
+      "Project1.dll": "sha256-z1QjtVyX8PXUSiDBvy5XoYRX14Dobp9WcEWs6H89x8c="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
