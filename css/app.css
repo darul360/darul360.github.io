@@ -63,7 +63,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
     .controlPane {
-        max-width: 100px;
+        max-width: 110px;
     }
 
     .aboutMe {
@@ -127,6 +127,10 @@ body {
 
     h5{
         font-size:1rem !important;
+    }
+
+    .editor-textarea-tile-maximized{
+        padding-bottom:20px !important;
     }
 }
 
