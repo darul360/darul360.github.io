@@ -56,45 +56,118 @@ body {
     transform: scale(1.5);
 }
 
-.controlPane {
-    background: rgb(249 245 252);
-}
 
 .headerPane {
     font-size: 1rem;
 }
 
-.aboutMe {
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    position: relative;
-    width: 90%;
-    margin-left: 17px;
-    cursor: pointer;
+@media only screen and (max-width: 1000px) {
+    .controlPane {
+        max-width: 100px;
+    }
+
+    .aboutMe {
+        font-size: 0.7rem !important;
+    }
+
+    .cSharpImg {
+        max-width: 15px !important;
+    }
+
+    .headerPane {
+        font-size: 0.7rem !important;
+        text-align: center;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .titleBarRight {
+        display: none !important;
+    }
+
+    .container-fluid {
+        overflow: scroll !important;
+        font-size: 0.7rem !important;
+    }
+
+    .tile-maximized {
+        font-size: 0.8rem !important;
+    }
+
+
+    .logoPng-tile-maximized {
+        width: 30px !important;
+    }
+
+    .logoPng {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .contactContainer-tile-maximized{
+        transform:scale(1) !important;
+    }
+
+    .card-body{
+        justify-content:flex-start !important;
+        white-space:nowrap !important;
+    }
+
+    .container-fluid-exp {
+        padding-bottom: 3rem !important;
+    }
+
+    .container-fluid-tech {
+        padding-bottom: 4rem !important;
+    }
+
+    .text-primary{
+        white-space:wrap !important;
+    }
+
+    h5{
+        font-size:1rem !important;
+    }
 }
 
-    .aboutMe::after {
-        content: "➔";
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%) translateX(-10px);
-        opacity: 0;
+.controlPane {
+    background: rgb(249 245 252);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .aboutMe {
+        font-size: 1.2rem;
         transition: all 0.3s ease;
+        text-decoration: none;
+        position: relative;
+        width: 90%;
+        margin-left: 17px;
+        cursor: pointer;
     }
 
-    .aboutMe.active::after {
-        opacity: 1;
-        transform: translateY(-50%) translateX(0);
-    }
+        .aboutMe::after {
+            content: "➔";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%) translateX(-10px);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
 
-    .aboutMe.active {
-        font-size: 1.24rem;
-        background: rgb(227 221 232);
-        border-radius: 15px;
-    }
+        .aboutMe.active::after {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+}
+.aboutMe.active {
+    font-size: 1.24rem;
+    background: rgb(227 221 232);
+    border-radius: 15px;
+}
 
+    
 .cSharpImg {
     width: 34px;
     margin-right: 5px;
