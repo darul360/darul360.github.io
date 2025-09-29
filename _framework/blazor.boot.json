@@ -1,7 +1,7 @@
 {
   "entryAssembly": "darul360.github.io_Backend",
   "resources": {
-    "hash": "sha256-jeUc+ujCJxo6V1MFTRaITwR8FELkJ64RUQp30OfcBQY=",
+    "hash": "sha256-/lNFc2IwaiJb6tVDMPgOMXw61lCpW75c/ycTVyG7Rso=",
     "runtime": {
       "dotnet.js": "sha256-eaJTmow4t8eE7FZMZR5Ja41JMOefGCbIYDTdpclGsac=",
       "dotnet.timezones.blat": "sha256-gbATD5HDsHYtW8vdPYh9iSBY4O5CjvMeCSF5xXWF1xo=",
@@ -54,7 +54,7 @@
       "System.Threading.dll": "sha256-lXTqz4P//kd/mQlYmYIjQW58o/9IOCa3Lkt2I2iPfHg=",
       "System.dll": "sha256-X00CS76RYP+1bonecVV1Cn/0jOHeoVQUo1GS8UHpHpM=",
       "System.Private.CoreLib.dll": "sha256-/E47Q0MZUInC54I5FvvpErGkArCfhnIZR0r9M0FqLPs=",
-      "darul360.github.io_Backend.dll": "sha256-reOEMFwpyKXUOx4gFWt8qvNgGXE8UWqwdnesS0Krz+c="
+      "darul360.github.io_Backend.dll": "sha256-hnKXyzIvxhsS5AEq76FTox+op/HjRDTvik6yhdXJ/Vo="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
